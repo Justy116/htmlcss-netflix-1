@@ -115,6 +115,10 @@ a:active {
   color: #000;
 }
 
+.btn:hover {
+  opacity: 0.7;
+}
+
 .btn:first-of-type {
   margin-right: 0.5em;
 }
