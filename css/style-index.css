@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Netflix Sans";
-    src: url("../assets/fonts/NetflixSansThin.ttf") format("truetype");
+    src: url("../assets/fonts/NetflixSansRegular.ttf") format("truetype");
 }
 
 * {
@@ -46,7 +46,7 @@ a:active {
 }
 
 .container__title {
-    font-size: max(30px, 3.5vw);
+    font-size: max(20px, 3.5vw);
     color: var(--white);
 }
 
@@ -60,13 +60,13 @@ a:active {
 
 .container__element {
     margin: 8px;
-    font-size: max(12px, 1.2vw);
+    font-size: max(10px, 1.2vw);
 }
 
 .container__element img {
     border: 2px solid transparent;
-    height: 10vw;
-    width: 10vw;
+    height: 4vw;
+    width: 4vw;
     max-height: 200px;
     max-width: 200px;
     min-height: 84px;
@@ -84,7 +84,7 @@ a:active {
 
 .container__button{
     border: 1px solid var(--gray);
-    width: 200px;
+    width: 40%;
     margin: 40px auto;
     padding: 10px;
 }
