@@ -59,7 +59,6 @@ a:active {
 
 .container__element {
     margin: 8px;
-    font-size: 1.2vw;
     font-size: max(12px, 1.2vw);
 }
 
@@ -79,7 +78,7 @@ a:active {
 }
 
 .container__element:hover > img {
-    border: 2px solid var(--white-color);
+    border-color: var(--white-color);
 }
 
 .container__button{
@@ -90,7 +89,7 @@ a:active {
 }
 
 .container__button:hover {
-    border: 1px solid var(--white-color);
+    border-color: var(--white-color);
 }
 
 .container__button:hover a{
