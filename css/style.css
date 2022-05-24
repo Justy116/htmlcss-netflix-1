@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Netflix Sans";
-  src: url("../assets/fonts/NetflixSansThin.ttf") format("truetype");
+  src: url("../assets/fonts/NetflixSansRegular.ttf") format("truetype");
 }
 
 /* GENERAL & RESETS */
@@ -19,7 +19,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Netflix Sans", sans-serif;
 }
 
 ul {
