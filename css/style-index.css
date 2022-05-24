@@ -14,17 +14,18 @@
 }
 
 :root {
-    --white-color: #FFFFFF;
-    --whiteOpacity: #4d4d4d;
-    --smokeWhite-color: #E5E5E5;
-    --midGrey-color: #6D6D6E;
-    --grey-color: #808080;
-    --black-color: #141414;
-    --red-color: #B9090B;
+    --white: #fff;
+    --white30: #ffffff4d;
+    --smokeWhite: #e5e5e5;
+    --hoveredGrey: #b3b3b3;
+    --midGray: #6d6d6eb2;
+    --gray: #808080;
+    --black: #141414;
+    --red: #b9090b;
 }
 
 body {
-    background-color: var(--black-color);
+    background-color: var(--black);
 }
 
 a,
@@ -46,11 +47,11 @@ a:active {
 
 .container__title {
     font-size: max(30px, 3.5vw);
-    color: var(--white-color);
+    color: var(--white);
 }
 
 .container__elements {
-    color: var(--grey-color);
+    color: var(--gray);
     display: flex;
     justify-content: center;
     margin: 2em 0;
@@ -74,30 +75,30 @@ a:active {
 }
 
 .container__element:hover {
-    color: var(--white-color);
+    color: var(--white);
 }
 
 .container__element:hover > img {
-    border-color: var(--white-color);
+    border-color: var(--white);
 }
 
 .container__button{
-    border: 1px solid var(--grey-color);
+    border: 1px solid var(--gray);
     width: 200px;
     margin: 40px auto;
     padding: 10px;
 }
 
 .container__button:hover {
-    border-color: var(--white-color);
+    border-color: var(--white);
 }
 
 .container__button:hover a{
-    color: var(--white-color);
+    color: var(--white);
 }
 
 .container__button a{
-   color: var(--grey-color);
+   color: var(--gray);
 }
 
 
