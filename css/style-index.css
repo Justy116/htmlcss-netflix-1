@@ -84,7 +84,7 @@ a:active {
 
 .container__button{
     border: 1px solid var(--gray);
-    width: 40%;
+    width: 150px;
     margin: 40px auto;
     padding: 10px;
 }

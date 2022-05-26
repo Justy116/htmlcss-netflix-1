@@ -1,0 +1,51 @@
+/* GENERAL  */
+
+@font-face {
+    font-family: "Netflix Sans";
+    src: url("../assets/fonts/NetflixSansRegular.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Netflix Sans";
+}
+
+:root {
+    --white: #fff;
+    --white30: #ffffff4d;
+    --smokeWhite: #e5e5e5;
+    --hoveredGrey: #b3b3b3;
+    --midGray: #6d6d6eb2;
+    --gray: #808080;
+    --black: #141414;
+    --red: #b9090b;
+}
+
+body {
+    background-color: var(--black);
+}
+
+/* container element  */
+
+.container__element{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__title {
+    color: white;
+}
+
+.container__element span {
+    font-size: 290px;
+    -webkit-text-stroke: 1px var(--smokeWhite);
+    color: var(--black);
+}
+
+.container__element img {
+    position: relative;
+    margin-left: -70px;
+}
