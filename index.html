@@ -5,49 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style-index.css" />
-
   </head>
 
   <body>
-
+    <nav class="nav">
+      <!-- LOGO -->
+      <a class="nav__logo" href="#">
+        <h1><img src="./assets/NetflixLogoSvg.svg" alt="Netflix Logo" /></h1>
+      </a>
+    </nav>
     <!-- Main section  -->
-    <main>
+    <main class="container">
+      <h1 class="container__title">Chi vuole guardare Netflix?</h1>
+      <div class="container__elements">
+        <a class="container__element" href="./homepage.html">
+          <div class="container__img profile-1"></div>
+          <span>Romolo</span>
+        </a>
+        <a class="container__element" href="./homepage.html">
+          <div class="container__img profile-2"></div>
+          <span>Anco Marzio</span>
+        </a>
+        <a class="container__element" href="./homepage.html">
+          <div class="container__img profile-3"></div>
 
-      <!-- First section  -->
-
-        <div class="container">
-          <h1 class="container__title">Chi vuole Guardare Netflix?</h1>
-          <div class="container__elements">
-              <a class="container__element" href="./homepage.html">
-                <img src="./assets/img/ProfilePicture.svg" alt="Profile-1" />
-                <h4>Remolo</h4>
-              </a>
-              <a class="container__element" href="./homepage.html">
-                <img src="./assets/img/ProfilePicture2.svg" alt="Profile-2" />
-                <h4>Anco Marzio</h4>
-              </a>
-              <a class="container__element" href="./homepage.html">
-                <img src="./assets/img/ProfilePicture3.svg" alt="Profile-3" />
-                <h4>Servio Tullio</h4>
-              </a>
-              <a  class="container__element" href="./homepage.html">
-                <img src="./assets/img/ProfilePicture4.svg" alt="Profile-4" />
-                <h4>Tullio Ostilio</h4>
-              </a>
-              <a class="container__element" href="#">
-                <img src="./assets/img/ProfilePicture5.svg" alt="Add-Profile" />
-                <h4>Nuovo Profilo</h4>
-              </a>
-          </div>
-          <div class="container__button">
-            <a href="#">Gestisci profili</a>
-          </div>
-        </div>
-
+          <span>Servio Tullio</span>
+        </a>
+        <a class="container__element" href="./homepage.html">
+          <div class="container__img profile-4"></div>
+          <span>Tullio Ostilio</span>
+        </a>
+        <a class="container__element" href="#">
+          <div class="container__img profile-5"></div>
+          <span>Nuovo Profilo</span>
+        </a>
+      </div>
+      <a class="container__button" href="#">Gestisci i profili</a>
     </main>
-    
-
   </body>
 </html>
