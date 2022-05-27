@@ -62,14 +62,13 @@ a:active {
     margin-left: -70px;
 }
 
-
 /* FOOTER  */
-
 
 .container__footer {
     padding: 0 4%;
-    max-width: 980px;
+    max-width: 70%;
     margin: 20px auto;
+    padding-bottom: 30px;
 }
 
 /* container icon  */
@@ -78,6 +77,7 @@ a:active {
     margin-top: 20px;
     margin-right: 20px;
     color: var(--white);
+    margin-bottom: 1em;
 }
 
 /* container link  */
@@ -89,9 +89,10 @@ a:active {
 
 .container__link li {
     flex-basis: 25%;
-    font-size: 13px;
-    color: var(--hoveredGrey);
-    margin-top: 15px;
+    font-size: max(.85vw, 13px);
+    color: var(--gray);
+    margin: 0 0 14px 0;
+    margin-bottom: 16px;
 }
 
 .container__link a:hover {
@@ -101,11 +102,13 @@ a:active {
 /* button footer  */
 
 .container__button{
+    margin-bottom: 20px;
+    font-size: 13px;
+    padding: 0.5em;
     text-align: center;
     width: 120px;
-    border: 1px solid var(--hoveredGrey);
+    border: 1px solid var(--gray);
     margin-top: 30px;
-    padding: 4px 8px;
     font-size: 12px;
     color: var(--hoveredGrey);
 }
@@ -313,6 +316,10 @@ a:active {
   display: flex;
   overflow-x: scroll;
   scrollbar-width: none;
+}
+
+.section__scroll::-webkit-scrollbar {
+  display: none;
 }
 
 /* CARD */
