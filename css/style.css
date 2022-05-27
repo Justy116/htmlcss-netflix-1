@@ -42,93 +42,92 @@ a:active {
 /*  GIUSTINO */
 /* container element  */
 
-.container__element{
-    display: flex;
-    justify-content: space-around;
+.container__element {
+  display: flex;
+  justify-content: space-around;
 }
 
 .container__title {
-    color: white;
+  color: white;
 }
 
 .container__element span {
-    font-size: 290px;
-    -webkit-text-stroke: 1px var(--smokeWhite);
-    color: var(--black);
+  font-size: 290px;
+  -webkit-text-stroke: 1px var(--smokeWhite);
+  color: var(--black);
 }
 
 .container__element img {
-    position: relative;
-    margin-left: -70px;
+  position: relative;
+  margin-left: -70px;
 }
 
 /* FOOTER  */
 
 .container__footer {
-    padding: 0 4%;
-    max-width: 70%;
-    margin: 20px auto;
-    padding-bottom: 30px;
+  padding: 0 4%;
+  max-width: 1400px;
+  margin: 20px auto;
+  padding-bottom: 30px;
 }
 
 /* container icon  */
 
 .container__icon svg {
-    margin-top: 20px;
-    margin-right: 20px;
-    color: var(--white);
-    margin-bottom: 1em;
+  margin-top: 20px;
+  margin-right: 20px;
+  color: var(--white);
+  margin-bottom: 1em;
 }
 
 /* container link  */
 
 .container__link {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container__link li {
-    flex-basis: 25%;
-    font-size: max(.85vw, 13px);
-    color: var(--gray);
-    margin: 0 0 14px 0;
-    margin-bottom: 16px;
+  flex-basis: 25%;
+  font-size: max(0.85vw, 13px);
+  color: var(--gray);
+  margin: 0 0 14px 0;
+  margin-bottom: 16px;
 }
 
 .container__link a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* button footer  */
 
-.container__button{
-    margin-bottom: 20px;
-    font-size: 13px;
-    padding: 0.5em;
-    text-align: center;
-    width: 120px;
-    border: 1px solid var(--gray);
-    margin-top: 30px;
-    font-size: 12px;
-    color: var(--hoveredGrey);
+.container__button {
+  width: 190px;
+  font-size: max(0.85vw, 13px);
+  padding: 0.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border: 1px solid var(--gray);
+  color: var(--hoveredGrey);
 }
 
 .container__button:hover {
-    color: var(--white);
+  color: var(--white);
 }
 
 .footer__p {
-    margin-top: 10px;
-    font-size: 12px;
-    color: var(--hoveredGrey);
+  margin-top: 10px;
+  font-size: max(0.85vw, 13px);
+  color: var(--hoveredGrey);
 }
 
 /* MEADIA  */
 
-@media only screen and (max-width: 825px){
-    .container__link li {
-        flex-basis: 50%;    
-    }
+@media only screen and (max-width: 825px) {
+  .container__link li {
+    flex-basis: 50%;
+  }
 }
 /* VALERIO */
 /* NAVBAR */
