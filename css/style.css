@@ -121,7 +121,7 @@ a:active {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: inset 0 0 100px 15px #000;
+  box-shadow: inset 0 -100px 100px var(--black), inset 0 0 100px 15px #000;
 }
 
 .header__info {
@@ -210,11 +210,13 @@ a:active {
   color: var(--white);
   /* height fissa */
   height: 11vw;
+  margin: 3vw 0;
 }
 
 .section__title {
   padding-left: 4%;
   font-size: 1.4vw;
+  margin-bottom: 0.3em;
 }
 
 .section__scroll {
@@ -245,8 +247,11 @@ a:active {
   border-top-right-radius: 4px;
 }
 
+.card__bottom {
+  padding: 1em;
+}
+
 .card__controls {
-  padding: 0 1em;
   padding-top: 1em;
   display: flex;
 }
@@ -260,6 +265,7 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .control:last-of-type {
@@ -271,9 +277,36 @@ a:active {
   border: 2px solid var(--hoveredGrey);
 }
 
-.svg-50 {
-  width: 50%;
-  height: 50%;
+.card__text,
+.card__genres {
+  cursor: default;
+  margin-top: 1em;
+}
+
+.card__text > span:first-child {
+  display: block;
+  margin-bottom: 0.4vw;
+}
+
+.maturity {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 0.4em;
+  margin-right: 0.5em;
+}
+
+.quality {
+  padding: 0 0.5em;
+  margin-left: 0.5em;
+  font-size: 0.7em;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+.card__genres > span:not(:last-child)::after {
+  color: #646464;
+  content: "\2022";
+  display: inline-block;
+  padding: 0 0.5vw;
 }
 
 /* Card hover */
@@ -282,7 +315,26 @@ a:active {
 }
 
 .card:hover > .card__modal {
+  border-radius: 6px;
   display: block;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.75);
+}
+
+/* .section__scroll:hover {
+  height: 235%;
+} */
+
+.text-green {
+  color: lime;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.svg-50 {
+  width: 50%;
+  height: 50%;
 }
 
 @media only screen and (max-width: 1400px) {
