@@ -4,15 +4,946 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="favicon" href="./assets/img/favicon.ico" type="image/x-icon">
     <title>Home - Netflix</title>
   </head>
   <body>
+    <!-- NAVBAR -->
+    <nav class="nav">
+      <!-- LOGO -->
+      <a class="nav__logo" href="#">
+        <h1><img src="./assets/NetflixLogoSvg.svg" alt="Netflix Logo" /></h1>
+      </a>
+      <!-- First list -->
+      <ul class="nav__list nav__list--primary">
+        <li class="nav__item nav__item--active">
+          <a href="">Home</a>
+        </li>
+        <li class="nav__item"><a href="">Serie TV</a></li>
+        <li class="nav__item"><a href="">Film</a></li>
+        <li class="nav__item"><a href="">Nuovi e popolari</a></li>
+        <li class="nav__item"><a href="">La mia lista</a></li>
+        <li class="nav__item"><a href="">Audio e sottotitoli</a></li>
 
-     <!-- card number section  -->
+        <li class="nav__item nav__item--mobile nav__item--active">Sfoglia</li>
+      </ul>
 
-     <section class="container__card__number">
+      <!-- Second list -->
+      <ul class="nav__list">
+        <li class="nav__item nav__item--active">
+          <!-- Lens -->
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="search-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13 11C13 13.7614 10.7614 16 8 16C5.23858 16 3 13.7614 3 11C3 8.23858 5.23858 6 8 6C10.7614 6 13 8.23858 13 11ZM14.0425 16.2431C12.5758 17.932 10.4126 19 8 19C3.58172 19 0 15.4183 0 11C0 6.58172 3.58172 3 8 3C12.4183 3 16 6.58172 16 11C16 11.9287 15.8417 12.8205 15.5507 13.6497L24.2533 18.7028L22.7468 21.2972L14.0425 16.2431Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item nav__item--active">
+          <!-- Bell -->
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="Hawkins-Icon Hawkins-Icon-Standard"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13 4.57092C16.3922 5.05624 18.9998 7.9736 18.9998 11.5V15.2538C20.0486 15.3307 21.0848 15.4245 22.107 15.5347L21.8926 17.5232C18.7219 17.1813 15.409 17 11.9998 17C8.59056 17 5.27764 17.1813 2.10699 17.5232L1.89258 15.5347C2.91473 15.4245 3.95095 15.3307 4.99978 15.2538V11.5C4.99978 7.97345 7.6076 5.05599 11 4.57086V2H13V4.57092ZM8.62568 19.3712C8.6621 20.5173 10.1509 22 11.9993 22C13.8477 22 15.3365 20.5173 15.373 19.3712C15.38 19.1489 15.1756 19 14.9531 19H9.04555C8.82308 19 8.61862 19.1489 8.62568 19.3712Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        <!-- Profile pic -->
+        <li class="nav__item nav__item--active nav__item--profile">
+          <img class="nav__profile-pic" src="./assets/ProfileIMG.svg" alt="Profile image" />
+          <img src="./assets/triangleDown.svg" alt="triangleDown" />
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="header">
+      <img class="header__image" src="./assets/babyboss-img.png" alt="Show image" />
+      <div class="header__info">
+        <!-- Show Title -->
+        <img class="header__title-logo" src="./assets/babyboss-title.png" alt="Show title" />
+        <!-- Testo header -->
+        <div class="header__text">
+          <!-- Supplemental message -->
+          <div class="header__supplemental-message">
+            <!-- Top 10 icon -->
+            <svg
+              class="header__top-10-svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="svg-icon svg-icon-top-10-badge"
+              style="color: #e50914"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 2C2.44772 2 2 2.44772 2 3V21C2 21.5523 2.44772 22 3 22H21C21.5523 22 22 21.5523 22 21V3C22 2.44772 21.5523 2 21 2H3ZM17.2299 10.8934C16.6125 10.4971 15.8913 10.2996 15.0673 10.2996C14.2444 10.2996 13.5231 10.4971 12.9056 10.8934C12.2881 11.2905 11.8114 11.8536 11.4762 12.5839C11.1411 13.3149 10.9735 14.1695 10.9735 15.1493C10.9735 16.1383 11.1411 16.9957 11.4762 17.7221C11.8114 18.4478 12.2881 19.0091 12.9056 19.4052C13.5231 19.8014 14.2444 20 15.0673 20C15.8913 20 16.6125 19.8014 17.2299 19.4052C17.8475 19.0091 18.3242 18.4478 18.6594 17.7221C18.9945 16.9957 19.1612 16.1383 19.1612 15.1493C19.1612 14.1695 18.9945 13.3149 18.6594 12.5839C18.3242 11.8536 17.8475 11.2905 17.2299 10.8934ZM9.47922 19.7994V10.3263L4.92658 11.4351V13.2656L7.20991 12.6774V19.7994H9.47922ZM13.7606 12.9513C14.0767 12.4298 14.5117 12.1701 15.0673 12.1701C15.6239 12.1701 16.0589 12.4298 16.3751 12.9513C16.6913 13.4718 16.8489 14.2058 16.8489 15.1493C16.8489 16.0938 16.6913 16.8268 16.3751 17.3473C16.0589 17.8688 15.6239 18.1296 15.0673 18.1296C14.5117 18.1296 14.0767 17.8688 13.7606 17.3473C13.4442 16.8268 13.2868 16.0938 13.2868 15.1493C13.2868 14.2058 13.4442 13.4718 13.7606 12.9513ZM13.0737 4.19939C12.7285 4.06677 12.3485 4 11.9344 4C11.5194 4 11.1405 4.06677 10.7952 4.19939C10.4521 4.33122 10.1518 4.51771 9.89848 4.75622C9.64404 4.99367 9.44963 5.27379 9.312 5.59396C9.17437 5.91504 9.10556 6.26299 9.10556 6.63872C9.10556 7.01446 9.17437 7.36241 9.312 7.68349C9.44963 8.00352 9.64404 8.28286 9.89848 8.52136C10.1518 8.75974 10.4521 8.9453 10.7952 9.07792C11.1405 9.20976 11.5194 9.27745 11.9344 9.27745C12.3485 9.27745 12.7285 9.20976 13.0737 9.07792C13.4168 8.9453 13.7161 8.75974 13.9704 8.52136C14.2239 8.28286 14.4194 8.00352 14.557 7.68349C14.6947 7.36241 14.7635 7.01446 14.7635 6.63872C14.7635 6.26299 14.6947 5.91504 14.557 5.59396C14.4194 5.27379 14.2239 4.99367 13.9704 4.75622C13.7161 4.51771 13.4168 4.33122 13.0737 4.19939ZM8.75526 5.30869V4.12288H4V5.30869H5.63894V9.15457H7.11632V5.30869H8.75526ZM18.9904 4.3469C18.6683 4.19847 18.2893 4.12327 17.8484 4.12327H15.5101V9.15392H16.9855V7.70838H17.8484C18.2893 7.70838 18.6683 7.63318 18.9904 7.48384C19.3117 7.33541 19.5601 7.12483 19.7366 6.85484C19.9132 6.58578 20 6.26931 20 5.90845C20 5.55682 19.9132 5.24587 19.7366 4.97602C19.5601 4.70683 19.3117 4.49624 18.9904 4.3469ZM11.2392 5.39166C11.4387 5.27379 11.6701 5.21545 11.9344 5.21545C12.1988 5.21545 12.4302 5.27379 12.6297 5.39166C12.8292 5.50954 12.9849 5.67653 13.0955 5.89001C13.2072 6.10521 13.2632 6.35386 13.2632 6.63872C13.2632 6.92267 13.2072 7.17224 13.0955 7.38651C12.9849 7.60092 12.8292 7.76791 12.6297 7.88565C12.4302 8.00352 12.1988 8.062 11.9344 8.062C11.6701 8.062 11.4387 8.00352 11.2392 7.88565C11.0397 7.76791 10.8841 7.60092 10.7724 7.38651C10.6617 7.17224 10.6057 6.92267 10.6057 6.63872C10.6057 6.35386 10.6617 6.10521 10.7724 5.89001C10.8841 5.67653 11.0397 5.50954 11.2392 5.39166ZM16.9855 5.27195H17.6149C17.9252 5.27195 18.1515 5.32845 18.2913 5.43895C18.4309 5.54931 18.5017 5.70616 18.5017 5.90845C18.5017 6.11535 18.4309 6.27589 18.2913 6.38902C18.1515 6.50228 17.9252 6.55878 17.6149 6.55878H16.9855V5.27195Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            Oggi al n° 2 nell'area Bambini
+          </div>
+          <div class="header__synopsis">
+            Diventato adulto, Ted Templeton è incastrato per appropiazione indebita e si ritrasforma in bambino
+            facendosi passaer per uno dei figli del fratello di Tim.
+          </div>
+        </div>
+        <!-- Tasti play / info -->
+        <div class="header__controls">
+          <button class="btn">
+            <!-- Play icon -->
+            <svg
+              class="btn__icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963 22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693 4 21.3087V2.69127Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <span class="btn__text">Riproduci</span>
+          </button>
+          <button class="btn btn--grey">
+            <!-- Info icon -->
+            <svg
+              class="btn__icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <span class="btn__text">Altre info</span>
+          </button>
+        </div>
+      </div>
+      <!-- Label classificazione -->
+      <div class="header__label">T</div>
+    </header>
+
+    <div class="container">
+      <!-- ROW 1 -->
+      <div class="section">
+        <h2 class="section__title">Valerio, continua a guardare:</h2>
+        <div class="section__scroll">
+          <!-- CARD 1 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card1.png" alt="Movie poster 1" />
+              <!-- Card Modal -->
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card1.png" alt="Movie poster 1" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card2.png" alt="Movie poster 2" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card2.png" alt="Movie poster 2" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card3.png" alt="Movie poster 3" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card3.png" alt="Movie poster 3" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card4.png" alt="Movie poster 4" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card4.png" alt="Movie poster 4" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card5.png" alt="Movie poster 5" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card5.png" alt="Movie poster 5" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 6 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card6.png" alt="Movie poster 6" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card6.png" alt="Movie poster 6" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 7 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card1.png" alt="Movie poster 1" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card1.png" alt="Movie poster 1" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ROW 2 -->
+      <div class="section">
+        <h2 class="section__title">Scegli a caso che te frega:</h2>
+        <div class="section__scroll">
+          <!-- CARD 1 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card1.png" alt="Movie poster 1" />
+              <!-- Card Modal -->
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card1.png" alt="Movie poster 1" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card2.png" alt="Movie poster 2" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card2.png" alt="Movie poster 2" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card3.png" alt="Movie poster 3" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card3.png" alt="Movie poster 3" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card4.png" alt="Movie poster 4" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card4.png" alt="Movie poster 4" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card5.png" alt="Movie poster 5" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card5.png" alt="Movie poster 5" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 6 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card6.png" alt="Movie poster 6" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card6.png" alt="Movie poster 6" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 7 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card1.png" alt="Movie poster 1" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card1.png" alt="Movie poster 1" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW 3 -->
+      <div class="section">
+        <h2 class="section__title">Altra sezione ma comunque ci sono gli stessi titoli:</h2>
+        <div class="section__scroll">
+          <!-- CARD 1 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card1.png" alt="Movie poster 1" />
+              <!-- Card Modal -->
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card1.png" alt="Movie poster 1" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card2.png" alt="Movie poster 2" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card2.png" alt="Movie poster 2" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card3.png" alt="Movie poster 3" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card3.png" alt="Movie poster 3" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card4.png" alt="Movie poster 4" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card4.png" alt="Movie poster 4" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card5.png" alt="Movie poster 5" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card5.png" alt="Movie poster 5" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 6 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card6.png" alt="Movie poster 6" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card6.png" alt="Movie poster 6" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 7 -->
+          <div class="card__placeholder">
+            <div class="card">
+              <img class="card__img" src="./assets/card1.png" alt="Movie poster 1" />
+              <div class="card__modal">
+                <img class="card__img" src="./assets/card1.png" alt="Movie poster 1" />
+                <div class="card__bottom">
+                  <div class="card__controls">
+                    <!-- Play btn -->
+                    <span class="control">
+                      <img class="svg-50" src="assets/play-solid.svg" alt="play icon" />
+                    </span>
+                    <!-- Plus btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/plus-solid.svg" alt="plus icon" />
+                    </span>
+                    <!-- Like btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/thumbs-up-regular.svg" alt="like icon" />
+                    </span>
+                    <!-- Arrow down btn -->
+                    <span class="control control--light">
+                      <img class="svg-50" src="assets/chevron-down-solid.svg" alt="arrow down icon" />
+                    </span>
+                  </div>
+                  <div class="card__text">
+                    <span class="text-green text-bold">98% compatibile</span>
+                    <span class="maturity">VM 18</span> 1 stagione <span class="quality">HD</span>
+                  </div>
+                  <div class="card__genres"><span>Anticonformismo</span><span>Crudo</span><span>Dramma</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW 4 TALL -->
+
+      <div class="section">
+        <h2 class="section__title">Altra sezione ma comunque ci sono gli stessi titoli:</h2>
+        <div class="section__scroll">
+          <card class="card__placeholder">
+            <img class="card__img" src="./assets/poster1.png" alt="Poster1" >
+          </card>
+          <card class="card__placeholder">
+            <img class="card__img" src="./assets/poster2.png" alt="Poster2" >
+          </card>
+          <card class="card__placeholder">
+            <img class="card__img" src="./assets/poster3.png" alt="Poster3" >
+          </card>
+          <card class="card__placeholder">
+            <img class="card__img" src="./assets/poster4.png" alt="Poster4" >
+          </card>
+          <card class="card__placeholder">
+            <img class="card__img" src="./assets/poster2.png" alt="Poster5" >
+          </card>      
+          <card class="card__placeholder">
+            <img class="card__img" src="./assets/poster1.png" alt="Poster6" >
+          </card>      
+          <card class="card__placeholder">
+            <img class="card__img" src="./assets/poster2.png" alt="Poster7" >
+          </card>      
+    </div>
+    
+<!--    Giustino      -->
+        <section class="container__card__number">
       <h2 class="container__title">Top 10 delle serie TV in Italia oggi</h2>
       <div class="container__element">
           <a href="#">
@@ -21,10 +952,8 @@
            </a>
       </div>
   </section>
-
-
-  
-    <!-- Footer  -->
+        
+        <!-- Footer  -->
 
     <footer class="container__footer">
       <div class="container__icon">
@@ -61,6 +990,5 @@
       </div>
       <p class="footer__p">© 1997-2021 Netflix, Inc.  {i-062d573a0ee099242}</p>
   </footer>
-
   </body>
 </html>
