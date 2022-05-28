@@ -230,23 +230,34 @@ a:active {
   padding-left: 4%;
   font-size: max(12px, 1.4vw);
   margin-bottom: 0.3em;
+  position: relative;
+  z-index: 2;
 }
 
 .section__title:hover + .section__see-all-links {
-    display: inline-block;
+  opacity: 1;
+  transform: translateX(0);
+  background-position: right;
 }
 
 .section__see-all-links {
-  display: none;
+  opacity: 0;
+  transform: translateX(-1vw);
+  position: relative;
+  z-index: 1;
+  display: inline-block;
   color: #54b9c5;
+
   background-image: url(../assets/img/arrow.svg);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: auto max(8px, .9vw);
-  font-size: max(8px, .9vw);
+  background-position: 80%;
+  background-size: auto max(8px, 0.9vw);
+
+  font-size: max(8px, 0.9vw);
   font-weight: 700;
   padding-right: 1em;
   margin-left: 1em;
+  transition: all 0.75s ease, opacity 1s;
 }
 
 .section__scroll {
@@ -298,11 +309,11 @@ a:active {
   border-top-right-radius: 4px;
 }
 
-.card__placeholder:not(:first-child, :last-child) .card__modal{
-    margin-left: -50px;
+.card__placeholder:not(:first-child, :last-child) .card__modal {
+  margin-left: -50px;
 }
 
-.card__placeholder:last-child .card__modal{
+.card__placeholder:last-child .card__modal {
   margin-left: -100px;
 }
 
@@ -399,6 +410,8 @@ a:active {
 .card:hover > .card__modal {
   border-radius: 6px;
   display: block;
+  position: relative;
+  z-index: 3;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.75);
 }
 
