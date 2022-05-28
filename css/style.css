@@ -226,9 +226,27 @@ a:active {
 }
 
 .section__title {
+  display: inline-block;
   padding-left: 4%;
-  font-size: 1.4vw;
+  font-size: max(12px, 1.4vw);
   margin-bottom: 0.3em;
+}
+
+.section__title:hover + .section__see-all-links {
+    display: inline-block;
+}
+
+.section__see-all-links {
+  display: none;
+  color: #54b9c5;
+  background-image: url(../assets/img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto max(8px, .9vw);
+  font-size: max(8px, .9vw);
+  font-weight: 700;
+  padding-right: 1em;
+  margin-left: 1em;
 }
 
 .section__scroll {
@@ -278,6 +296,14 @@ a:active {
   height: 100%;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+}
+
+.card__placeholder:not(:first-child, :last-child) .card__modal{
+    margin-left: -50px;
+}
+
+.card__placeholder:last-child .card__modal{
+  margin-left: -100px;
 }
 
 .card__bottom {
