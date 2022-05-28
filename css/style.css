@@ -280,6 +280,14 @@ a:active {
   border-top-right-radius: 4px;
 }
 
+.card__placeholder:not(:first-child, :last-child) .card__modal{
+    margin-left: -50px;
+}
+
+.card__placeholder:last-child .card__modal{
+  margin-left: -100px;
+}
+
 .card__bottom {
   padding: 1em;
 }
