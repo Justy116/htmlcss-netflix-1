@@ -206,10 +206,9 @@ a:active {
   position: relative;
 }
 
-/* Section */
+/* SECTION */
 .section {
   color: var(--white);
-  /* height fissa */
   height: 11vw;
   margin: 3vw 0;
 }
@@ -234,9 +233,14 @@ a:active {
 
 .section__scroll {
   padding-left: 4%;
+  padding-bottom: 10px;
   display: flex;
   overflow-x: scroll;
   scrollbar-width: none;
+}
+
+.section__scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .scroll--top10 > * {
@@ -386,79 +390,67 @@ a:active {
   height: 50%;
 }
 
-/*  GIUSTINO */
-/* container element  */
-
-.container__element {
-  display: flex;
-  justify-content: space-around;
-}
-
-.container__title {
-  color: white;
-}
-
-.container__element span {
-  font-size: 290px;
-  -webkit-text-stroke: 1px var(--smokeWhite);
-  color: var(--black);
-}
-
-.container__element img {
-  position: relative;
-  margin-left: -70px;
-}
-
 /* FOOTER  */
 
-.container__footer {
+.footer {
   padding: 0 4%;
-  max-width: 980px;
-  margin: 20px auto;
+  margin: -13vw auto 0;
+  max-width: 1100px;
+  color: grey;
+  font-size: 13px;
 }
 
-.container__icon svg {
-  margin-top: 20px;
-  margin-right: 20px;
+.footer__icons {
+  margin-bottom: 1em;
+}
+
+.footer__icons svg {
+  width: 36px;
+  height: 25px;
+  margin: 0 -1px;
   color: var(--white);
 }
 
-.container__link {
+.footer__icons a {
+  margin-right: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__links {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 14px;
 }
 
-.container__link li {
+.footer__links li {
   flex-basis: 25%;
-  font-size: 13px;
-  color: var(--hoveredGrey);
-  margin-top: 15px;
+  margin-bottom: 16px;
 }
 
-.container__link a:hover {
+.footer__links a:hover {
   text-decoration: underline;
 }
 
 /* button footer  */
 
-.container__button {
+.footer__button {
+  color: inherit;
+  background-color: transparent;
   text-align: center;
-  width: 120px;
-  border: 1px solid var(--hoveredGrey);
-  margin-top: 30px;
-  padding: 4px 8px;
-  font-size: 12px;
-  color: var(--hoveredGrey);
+  border: 1px solid grey;
+
+  margin-bottom: 20px;
+  padding: 0.5em;
 }
 
-.container__button:hover {
+.footer__button:hover {
   color: var(--white);
 }
 
 .footer__p {
   margin-top: 10px;
-  font-size: 12px;
-  color: var(--hoveredGrey);
+  font-size: 11px;
 }
 
 /* MEDIA QUERIES */
@@ -549,7 +541,7 @@ a:active {
     height: 20vw;
   }
 
-  .container__link li {
+  .footer__links li {
     flex-basis: 50%;
   }
 
