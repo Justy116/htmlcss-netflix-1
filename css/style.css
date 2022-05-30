@@ -415,6 +415,7 @@ a:active {
 .number--2-digits {
   font-size: 11vw;
   line-height: 11vw;
+  margin: 0.125em 0;
   transform: translateX(0);
   letter-spacing: -20px;
 }
@@ -529,6 +530,7 @@ a:active {
   }
 
   .number--2-digits {
+    margin: 0.125em 0;
     font-size: 13vw;
     line-height: 13vw;
     letter-spacing: -28px;
@@ -545,11 +547,12 @@ a:active {
   }
 
   .card__number {
-    font-size: 21vw;
-    line-height: 21vw;
+    font-size: 19vw;
+    line-height: 19vw;
   }
 
   .number--2-digits {
+    margin: 0.05em 0;
     font-size: 17vw;
     line-height: 17vw;
     letter-spacing: -28px;
@@ -614,8 +617,8 @@ a:active {
   }
 
   .card__number {
-    font-size: 28vw;
-    line-height: 28vw;
+    font-size: 25vw;
+    line-height: 25vw;
   }
 
   .number--2-digits {
@@ -635,13 +638,14 @@ a:active {
   }
 
   .card__number {
-    font-size: 42vw;
-    line-height: 42vw;
+    font-size: 35vw;
+    line-height: 35vw;
   }
 
   .number--2-digits {
-    font-size: 33vw;
-    line-height: 33vw;
+    margin: 0.1em 0;
+    font-size: 30vw;
+    line-height: 30vw;
     letter-spacing: -18px;
   }
 }
