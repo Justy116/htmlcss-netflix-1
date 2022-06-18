@@ -5,15 +5,16 @@ let video = document.querySelector(".header__video");
 
 //function Audio Movie Background
 function audioMovieBackground(){
+    btnMute.addEventListener("click", ()=>{
+      video.muted = !video.muted;
+      btnAudio.classList.remove("audio");
+      btnMute.classList.add("audio");
+  })
+
   btnAudio.addEventListener("click", ()=>{
       video.muted = !video.muted;
-      btnAudio.classList.add("mute");
-      btnMute.classList.remove("mute");
-  })
-  btnMute.addEventListener("click", ()=>{
-      video.muted = !video.muted;
-      btnAudio.classList.remove("mute");
-      btnMute.classList.add("mute");
+      btnAudio.classList.add("audio");
+      btnMute.classList.remove("audio");
   })
 }
 audioMovieBackground()
