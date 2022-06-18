@@ -168,12 +168,16 @@ a:active {
   z-index: 1;
 }
 
-.header__mute {
+.header__audio {
   position: absolute;
   right: 6%;
   top: 60%;
   font-size: 1.1vw;
   z-index: 1;
+}
+
+.mute {
+  display: none;
 }
 
 /* Buttons */

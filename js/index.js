@@ -15,8 +15,15 @@
 //         console.log("a")
 // }
 
-let btn = document.querySelector(".header__mute");
+let btnAudio = document.querySelector(".audio");
+let btnMute = document.querySelector(".mute");
 let video = document.querySelector(".header__video")
-btn.addEventListener("click", ()=>{
+btnAudio.addEventListener("click", ()=>{
     video.muted = !video.muted;
+    btnAudio.classList.add("mute");
+    btnMute.classList.remove("mute");
+})
+btnMute.addEventListener("click", ()=>{
+    btnAudio.classList.remove("mute");
+    btnMute.classList.add("mute");
 })
