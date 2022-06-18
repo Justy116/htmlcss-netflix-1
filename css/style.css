@@ -297,6 +297,7 @@ a:active {
 /* CARD */
 
 .card__placeholder {
+  display: flex;
   flex: 0 0 calc(100% / 6.4);
   height: 100%;
   margin: 0 0.2em;
