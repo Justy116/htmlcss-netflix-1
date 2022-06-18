@@ -172,8 +172,13 @@ a:active {
   position: absolute;
   right: 6%;
   top: 60%;
-  font-size: 1.1vw;
   z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header__audio svg {
+  height: 2.2vw;
 }
 
 .mute {
