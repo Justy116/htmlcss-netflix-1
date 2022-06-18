@@ -1,13 +1,13 @@
-for(i=0; i<5; i++){
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=e5a10c321bbd6c822e0ff030e4b57604&quot&page=${i}`)
-    .then(res=> res.json())
-    .then((data=>{
-        console.log(data)
-    }))
-    .catch(err=>{
-        console.log("error", err.message)
-    })
-}
+// for(i=0; i<5; i++){
+//     fetch(`https://api.themoviedb.org/3/movie/popular?api_key=e5a10c321bbd6c822e0ff030e4b57604&quot&page=${i}`)
+//     .then(res=> res.json())
+//     .then((data=>{
+//         console.log(data)
+//     }))
+//     .catch(err=>{
+//         console.log("error", err.message)
+//     })
+// }
 
 
 
